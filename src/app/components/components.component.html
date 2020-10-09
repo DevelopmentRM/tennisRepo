@@ -1,0 +1,171 @@
+<div class="wrapper">
+  <div class="page-header clear-filter">
+    <div
+      class="page-header-image rellax-header"
+      data-rellax-speed="-7"
+      style="background-image: url('assets/img/background.jpg')"
+    ></div>
+
+    <div class="container">
+      <div class="content-center brand">
+        <img class="n-logo" src="assets/img/logo.jpg" alt="" />
+        <h1>Happiness Makers</h1>
+        <h3>Let The Racket Talking</h3>
+      </div>
+      <h6 class="category category-absolute">
+        Designed by
+        <a href="https://invisionapp.com/" target="_blank">
+          <img
+            src="assets/img/invision-white-slim.png"
+            class="invision-logo"
+          /> </a
+        >. Coded by
+        <a href="https://www.creative-tim.com" target="_blank">
+          <img
+            src="assets/img/creative-tim-white-slim2.png"
+            class="creative-tim-logo"
+          /> </a
+        >.
+      </h6>
+    </div>
+  </div>
+  <div class="section section-about-us" data-background-color="gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Who we are?</h2>
+          <h5 class="description">
+            Tennis program in Happiness Makers academy is intended to optimally develop players’ skills. The individual approach adopted for each player ensures that every player’s maximum potential is achieved. This tennis program is identical to that used by world-class players. For physically more mature players it can be extended by an extra hour’s sparring every day. Daily physiotherapy is an essential part of this program. Our tennis programs are for professionals, juniors, children and also for amateur players.
+             We also offer a tennis program tailored exactly to the requirements and needs of tennis players.
+          </h5>
+        </div>
+      </div>
+      <div class="separator separator-primary"></div>
+      <div class="section-story-overview">
+        <div class="row">
+            
+          <div class="col-md-5">
+            <h3>
+              Details
+            </h3>
+            <ul>
+                <li>Collections of trainers in different sports:
+                    <ul>
+                        <li>
+                            Tennis
+                        </li>
+                        <li>
+                            Gemnastics
+                        </li>
+                        <li>
+                            Fitness
+                        </li>
+                        <li>
+                            Football
+                        </li>
+                        <li>
+                            Swimming
+                        </li>
+                    </ul>
+                </li>
+            <br>
+                <li>The company can supply the nursery with many trainers if there is a fun day</li>
+                <br>
+                <li>The company provides coaches to go outside the nursery at outdoor clubs</li>
+                <br>
+                <li>The company provides the necessary tools for some sports, for example:
+                    <ul>
+                        <li>
+                            Tennis
+                        </li>
+                        <li>
+                            Football
+                        </li>
+                        <li>
+                            Fitness
+                        </li>
+                    </ul>The company deals with the nursery according to
+                </li>
+                <br>
+                <li>The company shall book the playgrounds for each game according to the place of the nursery, unless the nursery has its own playgrounds.</li>
+                <br>
+                <li>The company deals with the nursery according to:
+                    <ul>
+                        <li>
+                            Working hours
+                        </li>
+                        <li>
+                            Number of coaches
+                        </li>
+                        <li>
+                            Number of children
+                        </li>
+                        <li>
+                            Number of days
+                        </li>
+                        <li>
+                            Monthly or daily system
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <img class="n-logo" src="assets/img/img.jpg" style="margin-left: 219px;" alt="" />
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-examples">
+    <div class="space-50"></div>
+    <div class="container text-center">
+      <div class="col" id="carousel">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let image of imagelist">
+                  <img class="d-block" [src]="image" alt="First slide" />
+                </ng-template>
+              </ngb-carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" data-background-color="black">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.creative-tim.com"> Creative Tim </a>
+          </li>
+          <li>
+            <a href="https://www.creative-tim.com/about-us"> About Us </a>
+          </li>
+          <li>
+            <a href="http://blog.creative-tim.com"> Blog </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md"
+            >
+              MIT License
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        {{ data | date: "yyyy" }}, Designed by
+        <a href="https://www.invisionapp.com" target="_blank">Invision</a>.
+        Coded by
+        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+      </div>
+    </div>
+  </footer>
+</div>
