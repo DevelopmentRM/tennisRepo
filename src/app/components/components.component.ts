@@ -14,7 +14,7 @@ import * as Rellax from 'rellax';
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
-   imagelist:String[]=[];
+   imagelist:String[]=[] ;
     data : Date = new Date();
 
     page = 4;
