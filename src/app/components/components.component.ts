@@ -14,7 +14,7 @@ import * as Rellax from 'rellax';
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
-   imagelist:String[]=[] ;
+   imagelist:Array<Object>=[] ;
     data : Date = new Date();
 
     page = 4;
@@ -56,11 +56,16 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         this.slideImages();
     }
     slideImages(){
+
      for(let i=0;i<178;i++){
-        let imageName:String="assets\\img\\tinessimage\\IMG ("+(i+1).toString()+")"+".jpg";
-        this.imagelist.push(imageName);
+        let imageObject: object = {
+            image: "assets\\img\\tinessimage\\IMG ("+(i+1).toString()+")"+".jpg",
+            thumbImage: "assets\\img\\tinessimage\\IMG ("+(i+1).toString()+")"+".jpg",
+        }
+        this.imagelist.push(imageObject);
      }
     }
+   
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');

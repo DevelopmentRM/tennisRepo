@@ -29,10 +29,11 @@
       </h6>
     </div>
   </div>
-  <div class="section section-about-us" data-background-color="gray">
+  <div class="sectionStyle" data-background-color="gray">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 ml-auto mr-auto text-center">
+        <div class="col-md-8 ml-auto mr-auto text-center" style="margin-top:30px;">
+          
           <h2 class="title">Who we are?</h2>
           <h5 class="description">
             Tennis program in Happiness Makers academy is intended to optimally develop players’ skills. The individual approach adopted for each player ensures that every player’s maximum potential is achieved. This tennis program is identical to that used by world-class players. For physically more mature players it can be extended by an extra hour’s sparring every day. Daily physiotherapy is an essential part of this program. Our tennis programs are for professionals, juniors, children and also for amateur players.
@@ -55,63 +56,32 @@
                             Tennis
                         </li>
                         <li>
-                            Gemnastics
-                        </li>
-                        <li>
                             Fitness
-                        </li>
-                        <li>
-                            Football
-                        </li>
-                        <li>
-                            Swimming
-                        </li>
+                        </li>                   
                     </ul>
                 </li>
             <br>
-                <li>The company can supply the nursery with many trainers if there is a fun day</li>
+                <li>The company can supply many trainers if there is a fun day</li>
                 <br>
-                <li>The company provides coaches to go outside the nursery at outdoor clubs</li>
+                <li>The company provides coaches to go outside at outdoor clubs</li>
                 <br>
                 <li>The company provides the necessary tools for some sports, for example:
                     <ul>
                         <li>
                             Tennis
-                        </li>
-                        <li>
-                            Football
-                        </li>
+                        </li>                   
                         <li>
                             Fitness
                         </li>
-                    </ul>The company deals with the nursery according to
-                </li>
-                <br>
-                <li>The company shall book the playgrounds for each game according to the place of the nursery, unless the nursery has its own playgrounds.</li>
-                <br>
-                <li>The company deals with the nursery according to:
-                    <ul>
-                        <li>
-                            Working hours
-                        </li>
-                        <li>
-                            Number of coaches
-                        </li>
-                        <li>
-                            Number of children
-                        </li>
-                        <li>
-                            Number of days
-                        </li>
-                        <li>
-                            Monthly or daily system
-                        </li>
                     </ul>
                 </li>
+                <br>
+                <li>The company shall book the playgrounds for each game according to the place.</li>
+                <br>      
             </ul>
           </div>
-          <div class="col-md-5">
-            <img class="n-logo" src="assets/img/img.jpg" style="margin-left: 219px;" alt="" />
+          <div class="col-md-7">
+            <img class="n-logo" src="assets/img/tinessimage/IMG (174).jpg" style="width: 2000;margin-left: 150px;" alt="" />
         </div>
         </div>
       </div>
@@ -125,11 +95,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12">
-              <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let image of imagelist">
-                  <img class="d-block" [src]="image" alt="First slide" />
-                </ng-template>
-              </ngb-carousel>
+               <ng-image-slider [images]="imagelist" [slideImage]="3" #nav></ng-image-slider>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 @NgModule({
     imports: [
         CommonModule,
@@ -21,7 +21,8 @@ import { NgbdModalBasic } from './modal/modal.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        NgImageSliderModule
       ],
     declarations: [
         ComponentsComponent,
