@@ -1,0 +1,45 @@
+<div class="wrapper">
+    <div class="page-header page-header-small">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8" 
+        style="background-image: url('assets/img/school.png');">
+        </div>
+    </div>
+  
+    <div class="sectionStyle" data-background-color="gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center" style="margin-top:30px;">           
+              <h2 class="title">Description</h2>
+              <h5 class="description">
+                Happiness Makers Academy provides the opportunity for children in the school to be the heroes of the future
+                and develop in them a love for sports and its practice.
+              </h5>
+                <div class="space-50"></div>
+                <div class="container text-center">
+                  <div class="col" id="carousel">
+                    <div class="container">
+                      <div class="row justify-content-center" style="margin-bottom: 30px;">
+                        <h3 class="title">Photos</h3>
+                        <div class="col-12">
+                           <ng-image-slider [images]="imagelist"  [slideImage]="2" #nav></ng-image-slider>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+<footer class="footer" data-background-color="black">
+  <div class="container">
+    <div class="copyright">
+      &copy;
+      {{ data | date: "yyyy" }}, Designed by
+      <a href="https://www.invisionapp.com" target="_blank">Invision</a>.
+      Coded by
+      <a href="https://www.creative-tim.com" target="_blank">Happiennies Makers Team</a>.
+    </div>
+  </div>
+</footer>
+</div>

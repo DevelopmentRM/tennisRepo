@@ -9618,7 +9618,10 @@ Created using IcoMoon - icomoon.io
     min-height: 60vh;
     max-height: 440px;
 }
-
+.page-header.page-header-simi {
+    min-height: 60vh;
+    max-height: 40px;
+}
 .page-header.page-header-mini {
     min-height: 40vh;
     max-height: 340px;

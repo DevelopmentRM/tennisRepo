@@ -8,6 +8,9 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { AdultComponent } from './components/adult/adult.component';
+import { NurseryComponent } from './components/nursery/nursery.component';
+import { SchoolComponent } from './components/school/school.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -15,7 +18,11 @@ const routes: Routes =[
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: 'examples/profile',     component: ProfileComponent },
+    { path: 'examples/adult',     component: AdultComponent },
+    { path: 'examples/nursery',     component: NurseryComponent },
+    { path: 'examples/school',     component: SchoolComponent }
+    
 ];
 
 @NgModule({

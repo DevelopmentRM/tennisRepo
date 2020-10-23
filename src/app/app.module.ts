@@ -9,11 +9,17 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-
+import { AdultComponent } from './components/adult/adult.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { NurseryComponent } from './components/nursery/nursery.component';
+import { SchoolComponent } from './components/school/school.component';
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        AdultComponent,
+        NurseryComponent,
+        SchoolComponent,
     ],
     imports: [
         BrowserAnimationsModule,
@@ -22,7 +28,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        NgImageSliderModule
     ],
     providers: [],
     bootstrap: [AppComponent]
